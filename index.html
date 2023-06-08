@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
+
+
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"/>
+
+  <!-- CSS -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geodatasource-country-region-dropdown@1.1.0/css/gds-style.css" /> -->
+
+
+
+
+
+
+</head>
+<body>
+  <nav class="navbar">
+    <a class="logo" href="#">Nid</a>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="product.html">About</a></li>
+      <li class="dropdown">
+        <a href="#">Dropdown</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Option 1</a></li>
+          <li><a href="#">Option 2</a></li>
+          <li><a href="#">Option 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Sign Up</a></li>
+    </ul>
+    <div class="dropdown-toggle">&#9776;</div>
+  </nav>
+  <div class="homepage">
+    <div class="content">
+      <h2>Welcome to Our Website</h2>
+      <p>Welcome to our Renting Services Website! Find your ideal accommodation and compatible roommates for a hassle-free living experience in PGs, flats, or apartments. Simplify your search and connect with like-minded individuals to create a comfortable and enjoyable home.</p>
+      <button id="openFormButton">Get Started</button>
+    </div>
+    <div class="image">
+      <img src="https://wallpaperaccess.com/full/3060214.jpg" alt="Image Description">
+    </div>
+  </div>
+  
+  <div class="form-overlay">
+    <div class="form-container">
+      <h2>Choose Your Preferred Accommodation</h2>
+      <form>
+        <!-- Form fields for accommodation details -->
+        <label for="accommodationType">Accommodation Type:</label>
+        <select id="accommodationType" name="accommodationType">
+          <option value="pg">PG</option>
+          <option value="flat">Flat</option>
+          <option value="apartment">Apartment</option>
+        <!-- </select>
+        Country:
+         <select class="gds-cr gds-countryflag" country-data-region-id="gds-cr-four" data-language="en"></select>
+
+Region:
+ <select id="gds-cr-four"></select> -->
+<div class="comment-box">
+  <h3>Leave a Comment</h3>
+  <form id="commentForm">
+    <textarea name="comment" id="commentInput" placeholder="Write your comment here" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+
+
+        
+        <!-- Other form fields for user details -->
+        
+        <button type="submit">Submit</button>
+        <button id="closeFormButton">Close</button>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://c4.wallpaperflare.com/wallpaper/76/280/48/architecture-building-design-house-wallpaper-preview.jpg" alt="Image 1">
+        </div>
+        <div class="card-back">
+          <h3>Card 1</h3>
+          <p>Card 1 description goes here.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://e0.pxfuel.com/wallpapers/1006/269/desktop-wallpaper-mansion-million-dollar-homes-background.jpg" alt="Image 1">
+        </div>
+        <div class="card-back">
+          <h3>Card 1</h3>
+          <p>Card 1 description goes here.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://images.pexels.com/photos/208736/pexels-photo-208736.jpeg?cs=srgb&dl=pexels-pixabay-208736.jpg&fm=jpg" alt="Image 1">
+        </div>
+        <div class="card-back">
+          <h3>Card 1</h3>
+          <p>Card 1 description goes here.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bHV4dXJ5JTIwaG91c2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt="Image 1">
+        </div>
+        <div class="card-back">
+          <h3>Card 1</h3>
+          <p>Card 1 description goes here.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bHV4dXJ5JTIwaG91c2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt="Image 1">
+        </div>
+        <div class="card-back">
+          <h3>Card 1</h3>
+          <p>Card 1 description goes here.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0CCR80fBu-nz0q_B2mjxlanzqK81RMXuEZbhkRBEYsZyVeSzxESVewsP3UmPxmPdi1wx_L9QtEDA&usqp=CAU&ec=48665701" alt="Image 1">
+        </div>
+        <div class="card-back">
+          <h3>Card 1</h3>
+          <p>Card 1 description goes here.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Repeat the above code for the remaining cards -->
+  </div>
+  <div class="carousel">
+  <div class="card-container">
+    <div class="card">
+      <div class="image">
+      <img src="https://api.makemyhouse.com/public/Media/rimage/500/completed-project/1574768220_819.jpg?watermark=false">
+     
+      </div>
+      <h3 class="title">Product 1</h3>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="buttons">
+        <button class="button buy-button">Buy</button>
+        <button class="button like-button">Like</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="image">
+      <img src="https://api.makemyhouse.com/public/Media/rimage/500/completed-project/1574768220_819.jpg?watermark=false">
+     
+      </div>
+      <h3 class="title">Product 2</h3>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="buttons">
+        <button class="button buy-button">Buy</button>
+        <button class="button like-button">Like</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="image">
+      <img src="https://api.makemyhouse.com/public/Media/rimage/500/completed-project/1574768220_819.jpg?watermark=false">
+     
+      </div>
+      <h3 class="title">Product 3</h3>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="buttons">
+        <button class="button buy-button">Buy</button>
+        <button class="button like-button">Like</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="image">
+      <img src="https://api.makemyhouse.com/public/Media/rimage/500/completed-project/1574768220_819.jpg?watermark=false">
+     
+      </div>
+      <h3 class="title">Product 4</h3>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="buttons">
+        <button class="button buy-button">Buy</button>
+        <button class="button like-button">Like</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="image">
+      <img src="https://api.makemyhouse.com/public/Media/rimage/500/completed-project/1574768220_819.jpg?watermark=false">
+      </div>
+      <h3 class="title">Product 5</h3>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="buttons">
+        <button class="button buy-button">Buy</button>
+        <button class="button like-button">Like</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="image">
+      <img src="https://api.makemyhouse.com/public/Media/rimage/500/completed-project/1574768220_819.jpg?watermark=false">
+     
+      </div>
+      <h3 class="title">Product 6</h3>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="buttons">
+        <button class="button buy-button">Buy</button>
+        <button class="button like-button">Like</button>
+      </div>
+    </div>
+  </div>
+</div>
+ <h1 align ="center" ><u> Our Features</u></h1>
+<div class="featues">
+
+<div class="ag-format-container">
+<div class="ag-courses_box">
+  <div class="ag-courses_item">
+    <a href="#" class="ag-courses-item_link">
+      <div class="ag-courses-item_bg"></div>
+
+      <div class="ag-courses-item_title">
+      Easy search
+      
+      </div>
+      <!-- <h3>You can easily search for PGs, flats, roommates, and house makers by location, price, amenities, and other factors.
+    </h3> -->
+  
+
+      
+    </a>
+  </div>
+
+  <div class="ag-courses_item">
+    <a href="#" class="ag-courses-item_link">
+      <div class="ag-courses-item_bg"></div>
+
+      <div class="ag-courses-item_title">
+      Detailed listings
+      </div>
+
+      
+    </a>
+  </div>
+
+  <div class="ag-courses_item">
+    <a href="#" class="ag-courses-item_link">
+      <div class="ag-courses-item_bg"></div>
+      <div class="ag-courses-item_title">
+      24/7 customer support
+      
+      </div>
+      
+    </a>
+  </div>
+
+  <div class="ag-courses_item">
+    <a href="#" class="ag-courses-item_link">
+      <div class="ag-courses-item_bg"></div>
+
+      <div class="ag-courses-item_title">
+      Discounts
+      </div>
+
+     
+    </a>
+  </div>
+
+  <div class="ag-courses_item">
+    <a href="#" class="ag-courses-item_link">
+      <div class="ag-courses-item_bg"></div>
+
+      <div class="ag-courses-item_title">
+      Security features
+      </div>
+
+      
+    </a>
+  </div>
+
+  <div class="ag-courses_item">
+    <a href="#" class="ag-courses-item_link">
+      <div class="ag-courses-item_bg"></div>
+
+      <div class="ag-courses-item_title">
+      Pet policies
+      </div>
+    </a>
+  </div>
+
+  <div class="ag-courses_item">
+    <a href="#" class="ag-courses-item_link">
+      <div class="ag-courses-item_bg">
+      </div>
+      <div class="ag-courses-item_title">
+      Student-friendly amenities
+      </div>
+    </a>
+  </div>
+
+  <div class="ag-courses_item">
+    <a href="#" class="ag-courses-item_link">
+      <div class="ag-courses-item_bg"></div>
+
+      <div class="ag-courses-item_title">
+      Flexible leases
+      </div>
+
+      
+    </a>
+  </div>
+  <div class="ag-courses_item">
+  <a href="#" class="ag-courses-item_link">
+    <div class="ag-courses-item_bg"></div>
+
+    <div class="ag-courses-item_title">
+    Community events
+    </div>
+
+    
+  </a>
+</div>
+
+</div>
+</div>
+  
+</div>
+<div class="steps">
+<h1>OL circle cards</h1>
+<ol>
+    <li >
+        <div class="icon">
+        <i class="fas fa-user-plus"></i>
+        </div>
+
+        <div class="title">Step 1</div>
+        <div class="descr">
+        Create an account
+        <!-- <h4 style="font-family: Times-Roman;">Create an account</h4> -->
+        </div>
+    </li>
+    <li >
+        <!-- <<i class="fa-solid fa-car"></i></div> -->
+        <div class="icon">
+        <i class="fas fa-sign-in-alt"></i> 
+        </div>
+        <div class="title">Step 2</div>
+        <div class="descr">Log in to your account</div>
+    </li>
+    <li >
+        <div class="icon">
+          <i class="fa-solid fa-house"></i>
+        </div>
+        <div class="title">Step 3</div>
+        <div class="descr">Search for rental options</div>
+    </li>
+    <li >
+        <div class="icon">
+        <i class="fa fa-user"></i>
+        </div>
+        <div class="title">Step 4</div>
+        <div class="descr">Search for room-mates options</div>
+    </li>
+    <li >
+        <div class="icon"><i class="fa fa fa-broom"></i></div>
+        <div class="title">Step 5</div>
+        <div class="descr">Search for house maid</div>
+    </li>
+    <li >
+        <div class="icon"><i class="fa fa-headset"></i></div>
+        <div class="title">Step 6</div>
+        <div class="descr">Type on Quick response to get the 24 X 7 hrs reply</div>
+       </li>
+</ol>
+
+</div>
+<footer>
+<div class="footer-content">
+  <div class="footer-section">
+    <h3>About Us</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  <div class="footer-section">
+    <h3>Contact Us</h3>
+    <p>Email: info@example.com</p>
+    <p>Phone: 123-456-7890</p>
+  </div>
+  <div class="footer-section">
+    <h3>Quick Links</h3>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <div class="footer-section">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+  </div>
+</div>
+<div class="footer-bottom">
+  <p>&copy; 2023 Your Website. All rights reserved. | Designed by Your Name</p>
+</div>
+</footer>
+
+  <!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/geodatasource-country-region-dropdown@1.1.0/js/gds.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
